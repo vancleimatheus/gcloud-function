@@ -1,0 +1,11 @@
+steps:
+- name: 'not-sure-what-this-is-for'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - function-1
+  - --region=us-central1
+  - --source=.
+  - --trigger-event google.storage.object.finalize
+  - --runtime=dotnet3
