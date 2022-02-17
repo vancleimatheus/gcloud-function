@@ -1,5 +1,6 @@
 steps:
-- name: 'gcr.io/cloud-builders/dotnet'
+- name: 'microsoft/dotnet:sdk'
+- entrypoint: 'dotnet'
   args:
   - gcloud
   - functions
