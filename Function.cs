@@ -11,7 +11,7 @@ namespace StorageSample
     {
         public Task HandleAsync(CloudEvent cloudEvent, StorageObjectData data, CancellationToken cancellationToken)
         {
-            Console.WriteLine("-- function from git --");
+            Console.WriteLine("-- function from git -- / function has changed");
             Console.WriteLine($"CloudEvent type: {cloudEvent.Type}");
             Console.WriteLine($"Storage bucket: {data.Bucket}");
             Console.WriteLine($"Storage object name: {data.Name}");
