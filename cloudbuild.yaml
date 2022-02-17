@@ -5,7 +5,7 @@ steps:
   - functions
   - deploy
   - function-1
-  - --region=us-central1
-  - --source=.
+  - --entry-point StorageSample.Function
+  - --runtime dotnet3 
+  - --trigger-resource vanclei-bucket
   - --trigger-event google.storage.object.finalize
-  - --runtime=dotnet3
