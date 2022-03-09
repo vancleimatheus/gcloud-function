@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - function-1
+  - --entry-point=StorageSample.Function
+  - --runtime=dotnet3 
+  - --trigger-resource=vanclei-bucket
+  - --trigger-event=google.storage.object.finalize
